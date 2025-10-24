@@ -171,7 +171,7 @@ class DatabaseManager {
   // Get database URI for specific database
   getDatabaseUri(dbName) {
     // Check for specific environment variables first
-    if (dbName === 'shop' && process.env.SHOP_DATABASE_URI) {
+    if (dbName === 'shop' && process.env.DATABASE_URI) {
       return process.env.SHOP_DATABASE_URI;
     }
     
@@ -2342,6 +2342,7 @@ app.use('*', (req, res) => {
     res.sendFile(path.join(clientDir, 'index.html'));
   }
 });
+
 
 
 
