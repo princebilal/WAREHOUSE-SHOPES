@@ -1,0 +1,19 @@
+{
+  "name": "sales-dashboard-node",
+  "description": "Sales Dashboard using Express + MongoDB Atlas",
+  "repository": "https://github.com/yourusername/your-repo-name",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "MONGO_URL": {
+      "description": "MongoDB Atlas connection string",
+      "value": "mongodb+srv://onlydevsx_db_user:aN0cWgqkOWo4rhiD@cluster0.jfuzynl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo '✅ Sales Dashboard deployed successfully on Heroku!'"
+  }
+}
